@@ -163,7 +163,9 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to left, #2AC28A, #f0f7f4);
 }
 
