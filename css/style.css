@@ -59,7 +59,7 @@
 
 /*Div contenedor principal de FAQ*/
 .contfaq {
-  background-color: rgb(173, 173, 173);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 
@@ -71,13 +71,13 @@
 
 /*Clases para el contenido de footer*/
 .footer{
-  margin: 50px 0px ;
+  margin: 20px 0px ;
 }
 .footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .footer ul li {
