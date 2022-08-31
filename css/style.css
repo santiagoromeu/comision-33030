@@ -1,371 +1,92 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.grid-container-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vh 20vh 20vh;
-    grid-template-areas:
-        "header header header"
-        "section1 section1 section1"
-        "section2 section3 section4"
-        "section2 section3 section4"
-        "footer footer footer";
+/*Clase para el div despues de la etiqueta Body*/
+.cuerpo {
+  background-color: rgb(252, 227, 144);
 }
 
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20vh 20vh 20vh 20vh;
-    grid-template-areas:
-        "header header header header"
-        "sectionB1 sectionB1 sectionB1 sectionB1"
-        "sectionB2 sectionB2 sectionB2 sectionB2"
-        "sectionB3 sectionB3 sectionB3 sectionB3"
-        "footer footer footer footer";
+ /*Estilo para  navbar*/
+.navpos{
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:center;
 }
 
-.grid-container-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20vh 20vh 20vh 20vh;
-    grid-template-areas:
-        "header header"
-        "sectionC1 sectionC1"
-        "sectionC2 sectionC2"
-        "footer footer";
+.logoimg {
+  width: 120px;
+  height: 110px;
+  margin: 0px 20px;
 }
 
-.header {
-    font-family: Arial, Helvetica, sans-serif;
-    grid-area: header;
-    background-color: #002043;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+/*Clase para el primer div contenedor del titulo*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: center;
+  width: 100%;
+  padding: 20px;;
 }
 
-.header img {
-    width: 130px;
+/*Color de fondo para nav y footer*/
+.bground {
+  background-color:rgb(255, 255, 255);
+  border-radius: 0px;
 }
 
-.header ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #002043;
+/*Margenes de videos*/
+.videocont {
+  margin: 10px;
 }
 
-.header ul li {
-    padding: 16px;
-    background-color: #002043;
+/*Seteo de divs de pagina de inicio*/
+.principal {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  align-items: center;
 }
 
-.header ul li a:hover {
-    background-color: #2AC28A;
-    color: black;
+/*Seteo de tamaño de imagen carrusel*/
+.imgvista {
+  width: 400px;
+  height: 400px;
 }
 
-.header ul a {
-    text-decoration: none;
-    padding: 12px 16px;
-    color: #D3B04D;
+/*Div contenedor principal de FAQ*/
+.contfaq {
+  background-color: rgb(173, 173, 173);
+  border-radius: 10px;
 }
 
-/*dropdown para el NAV*/
-
-.dropbtn {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #002043;
-    color:  #D3B04D;
-    font-size: 17px;
-    padding: 12px 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    color: black;
-    background-image: linear-gradient(to left, #2AC28A, #f0f7f4);
-}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #2AC28A;
-    color: black;
-  }
-
-/*fin de clases para dropdown*/
-
-.section1 {
-    grid-area: section1;
-    background-color: #2AC28A;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to left, #2AC28A, #f0f7f4);
+/*Margenes para ROW sin modificar la clase de Bootstrap*/
+.rmargin {
+  justify-content: space-evenly;
+  margin: 10px 10px 10px 10px;
 }
 
-.section1 h1 {
-    color: #002043;
+/*Clases para el contenido de footer*/
+.footer{
+  margin: 50px 0px ;
 }
-
-.section2 {
-    grid-area: section2;
-    background-color: #002043;
-}
-
-.section3 {
-    grid-area: section3;
-    background-color: #002043;
-}
-
-.section4 {
-    grid-area: section4;
-    background-color: #002043;
-}
-
-
-.sectionB1 {
-    grid-area: sectionB1;
-    background-color: #2AC28A;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to left, #2AC28A, #f0f7f4);
-}
-
-.sectionB1 h1 {
-    color: #002043;
-}
-
-.sectionB1 h2 {
-    color: #002043;
-}
-
-.sectionB2 {
-    grid-area: sectionB2;
-    background-color: #002043;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.sectionB3 {
-    grid-area: sectionB3;
-    background-color: #002043;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-}
-
-.sectionC1 {
-    grid-area: sectionC1;
-    background-color: #2AC28A;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    color: #002043;
-    background-image: linear-gradient(to left, #2AC28A, #f0f7f4);
-}
-
-.sectionC1 h1 {
-    color: #002043;
-}
-
-.sectionC2 {
-    grid-area: sectionC2;
-    background-color: #002043;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #2AC28A;
-}
-
 .footer ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    background-color: #2AC28A;
-    padding: 20px;
-    background-image: linear-gradient(to left, #2AC28A, #f0f7f4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
 }
 
-.footer ul a {
-    text-decoration: none;
-    color: #002043;
-    }
-
-.logoImg {
-    width: 250px;
-    height: 150px
+.footer ul li {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-evenly;
 }
 
-h1 {
-    text-align: center;
-    color: #D3B04D;
-}
-
-h2 {
-    text-align: center;
-    margin: 20px;
-    color: #D3B04D;
-}
-
-h3 {
-    margin: 5px 20px 5px 20px;
-    color: #D3B04D;
-    margin-bottom: 20px;
-}
-
-p {
-    margin: 5px;
-    padding: 5px;
-    color: #D3B04D;
-}
-
-
-.colSec {
-    padding: 20px;
-    background-color: transparent;
-}
-
-.form {
-    padding: 20px;
-    background-color: #002043;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.indexImg {
-    width: 440px;
-    height: 315px;
-    margin: 2px;
-}
-
-.pagesImg {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 560px;
-    height: 315px;
-}
-
-@media (max-width: 768px) {
-    .grid-container-1 {
-        grid-template-areas:
-            "header header header"
-            "section1 section1 section1"
-            "section2 section2 section2"
-            "section3 section3 section3"
-            "section4 section4 section4"
-            "footer footer footer";
-    }
-
-    .header {
-        grid-area: header;
-        background-color: #002043;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-
-    }
-
-    .header ul {
-        display: flex;
-        list-style: none;
-        width: 100vw;
-        justify-content: space-evenly;
-        padding: 15px;
-        flex-direction: column;
-    }
-
-    .indexImg {
-        width: 410px;
-        height: 315px;
-        margin: 2px;
-    }
-}
-
-@media (max-width: 390px) {
-    .grid-container-1 {
-        grid-template-areas:
-            "header header header"
-            "section1 section1 section1"
-            "section2 section2 section2"
-            "section3 section3 section3"
-            "section4 section4 section4"
-            "footer footer footer";
-    }
-
-    .header {
-        grid-area: header;
-        background-color: #002043;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-
-    }
-
-    .header ul {
-        display: flex;
-        list-style: none;
-        width: 100vw;
-        justify-content: space-evenly;
-        padding: 15px;
-        flex-direction: column;
-    }
-
-    .indexImg {
-        width: 350px;
-        height: 220px;
-        margin: 2px;
-    }
+.footer a {
+  text-decoration: none;
+  color: black;
 }

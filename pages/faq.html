@@ -2,64 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>FAQ</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Mi CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <title>Pousada Morada da Laika - FAQ</title>
 </head>
 
 <body>
-    <div class="grid-conatiner-2">
-        <header class="header">
-            <img src="../img/logo.png" class="logoImg">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <div class="dropdown">
-                        <div class="dropdown">
-                            <button class="dropbtn">DESTINOS</button>
-                            <div class="dropdown-content">
-                                <a href="./brasil.html">BRASIL</a>
-                                <a href="./chile.html">CHILE</a>
-                                <a href="./grecia.html">GRECIA</a>
-                            </div>
-                        </div>
-                    </div>
-                    <li>
-                        <a href="./faq.html">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="sectionB1">
-            <h1>PREGUNTAS FRECUENTES</h1>
-        </section>
-        <section class="sectionB2">
-            <h3>¿Aquí va la primera pregunta?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam mollitia iure fuga laboriosam voluptates ipsum repudiandae earum, odio consequuntur aliquam blanditiis fugit eius rem neque hic voluptatem modi? Laboriosam, ducimus?</p>
-            <h3>¿Aquí va la segunda pregunta?</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia deleniti quo a consequatur quas vel vero autem laudantium earum dignissimos ex inventore, exercitationem, aspernatur commodi nesciunt. Voluptatibus, corrupti dignissimos? Consectetur?</p>
-            <h3>¿Aquí va la tercera pregunta?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eius magnam veniam exercitationem non dolores accusantium similique corporis modi doloribus quia, repudiandae dignissimos laboriosam minus tempora reiciendis dolore ipsam quas?</p>
-            <p>Agrego un pequeño cambio para probar el cambio de branch en GIT</p>
-        </section>
-        <footer class="footer">
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
-            </ul>
-        </footer>
+  <div class="cuerpo">
+
+    <!--Barra de navegación-->
+    <header>
+      <nav class=" navbar navbar-expand-lg bground navpos">
+        <img src="../img/logo.png" alt="logo" class="logoimg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Pousada</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./departamentos.html">Acomodações</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ubicación.html">Localização</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <!--Contenedor titulo principal-->
+    <div class="container-fluid intro">
+      <h1>Preguntas frequentes</h1>
+      <p class="row text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus veniam, hic voluptate
+        rerum veritatis doloremque dignissimos a voluptatem voluptas laudantium. <br>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Saepe, aut..</p>  
     </div>
+
+    <!--Contenedor de FAQ-->
+    <div class="row contfaq rmargin">
+      <div class="container col-sm-12 col-md-6 col-xl-3 p-3">
+        <h2>¿PRIMERA PREGUNTA?</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto repudiandae enim officiis dicta distinctio
+          expedita?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto repudiandae enim officiis dicta distinctio
+          expedita?</p>
+      </div>
+      <div class="container col-sm-12 col-md-6 col-xl-3 p-3">
+        <h2>¿SEGUNDA PREGUNTA?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero rerum culpa atque? Impedit, soluta.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero rerum culpa atque? Impedit, soluta.
+        </p>
+      </div>
+      <div class="container col-sm-12 col-md-6 col-xl-3 p-3">
+        <h2>¿TERCERA PREGUNTA?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde exercitationem quod, ipsa blanditiis atque
+          architecto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde exercitationem quod, ipsa blanditiis atque
+          architecto.</p>
+      </div>
+      <div class="container col-sm-12 col-md-6 col-xl-3 p-3">
+        <h2>¿CUARTA PREGUNTA?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde exercitationem quod, ipsa blanditiis atque
+          architecto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde exercitationem quod, ipsa blanditiis atque
+          architecto.</p>
+      </div>
+    </div>
+
+     <!--Footer-->
+     <footer class="footer bground">
+      <ul class="container">
+        <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
+      </ul>
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

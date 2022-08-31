@@ -2,77 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>HOME</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Mi CSS -->
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Pousada Morada da Laika</title>
 </head>
 
 <body>
-    <div class="grid-container-1">
-        <header class="header">
-            <img src="./img/logo.png" class="logoImg">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="./pages/nosotros.html">NOSOTROS</a>
-                    </li>
-                    <div class="dropdown">
-                        <div class="dropdown">
-                            <button class="dropbtn">DESTINOS</button>
-                            <div class="dropdown-content">
-                                <a href="./pages/brasil.html">BRASIL</a>
-                                <a href="./pages/chile.html">CHILE</a>
-                                <a href="./pages/grecia.html">GRECIA</a>
-                            </div>
-                        </div>
-                    </div>
-                    <li>
-                        <a href="./pages/faq.html">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section class="section1">
-            <h1>BOATTRAVEL - Tu viaje a vela planificado</h1>
-        </section>
-        <section class="section2">
-            <h2>Angra</h2>
-            <img class="indexImg" src="./img/angra.jpeg" alt="angra">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt corrupti, illo amet minus
-                magnam quibusdam architecto dolorem porro aliquid blanditiis necessitatibus culpa optio molestiae nemo
-                dolor modi voluptate cumque! test</p>
-        </section>
-        <section class="section3">
-            <h2>Cabo de hornos</h2>
-            <img class="indexImg" src="./img/cabodehornos.jpg" alt="Cabo-de-hornos">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt corrupti, illo amet minus
-                magnam quibusdam architecto dolorem porro aliquid blanditiis necessitatibus culpa optio molestiae nemo
-                dolor modi voluptate cumque!</p>
-            <p>Prueba de cambio de branch en git</p>
-        </section>
-        <section class="section4">
-            <h2>Santorini</h2>
-            <img class="indexImg" src="./img/santorini.jpg" alt="santorini">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt corrupti, illo amet minus
-                magnam quibusdam architecto dolorem porro aliquid blanditiis necessitatibus culpa optio molestiae nemo
-                dolor modi voluptate cumque!</p>
-        </section>
-        <footer class="footer">
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
-            </ul>
-        </footer>
+  <div class="cuerpo">
+
+    <!--Barra de navegación-->
+    <header>
+      <nav class=" navbar navbar-expand-lg bground navpos">
+        <img src="./img/logo.png" alt="logo" class="logoimg">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Pousada</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/departamentos.html">Acomodações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/ubicación.html">Localização</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </header>
+    <!--Contenedor titulo principal-->
+    <div class="container-fluid intro">
+      <h1>Morada da Laika</h1>
+      <p class="row text-black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, reiciendis?</p>
     </div>
+
+    <!--Contenedor de carrusel inicial-->
+    <div class="container-fluid w-75">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/inicio1.jpg" class="d-block w-100 imgvista" alt="morada-1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vista uno</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/inicio2.jpg" class="d-block w-100 imgvista" alt="morada-2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vista dos</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/inicio3.jpg" class="d-block w-100 imgvista" alt="morada-3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>vista tres</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer bground">
+      <ul class="container">
+        <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
